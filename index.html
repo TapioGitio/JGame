@@ -16,6 +16,10 @@
     display: flex; gap: 24px; align-items: flex-start;
   }
   canvas { border: 3px solid #c026d3; border-radius: 8px; background: #0a0a1a; box-shadow: 0 0 20px rgba(192,38,211,0.3); }
+  .title {
+    display: block;
+    color: lightpink;
+  }
   .panel {
     width: 170px; display: flex; flex-direction: column; gap: 16px;
   }
@@ -84,8 +88,10 @@
 
 <div id="game-wrapper">
   <div class="panel">
-    <h1>*NSYNC TETRIS</h1>
-    <h2>Made by Janne for Monica ❤️</h2>
+    <div class="title">
+      <h1>*NSYNC TETRIS</h1>
+      <h6>Made by Janne for Monica ❤️</h6>
+    </div>
     <div class="box">
       <div class="label">Score</div>
       <div class="value" id="score">0</div>
